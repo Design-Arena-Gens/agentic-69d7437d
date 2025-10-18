@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 246, 250, 255;
+  --foreground: 13, 18, 27;
+}
+
+.dark {
+  --background: 8, 11, 20;
+  --foreground: 233, 242, 255;
+}
+
+body {
+  @apply bg-[rgb(var(--background))] text-[rgb(var(--foreground))] antialiased;
+  font-feature-settings: 'ss01' on, 'ss02' on;
+}
+
+* {
+  @apply transition-colors duration-200;
+}
